@@ -1,0 +1,20 @@
+<div class="portfolio">
+    <div class="general-text">
+        <h2> My Work </h2>
+
+        <div class="grid">
+            {% for highlight in site.data.settings.highlights %}
+            <div class="work-container" style="background: url(/assets/img/work/{{ highlight.folder }}/thumb.jpg);">
+                <a href="/3D">
+                    <div class="work-overlay">
+                        <big>{{ highlight.name }}</big>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+</section>

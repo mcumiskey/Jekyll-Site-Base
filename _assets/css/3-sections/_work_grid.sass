@@ -1,0 +1,51 @@
+.portfolio
+    padding: 10px 0px
+    text-align: center
+    padding-bottom: 30px
+
+.grid
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+    gap: 10px
+    +clearfix
+
+.work-container
+    display: block
+    position: relative
+    min-height: 200px
+    cursor: pointer
+    background:
+        position: center center
+        repeat: no-repeat
+        size: cover
+    overflow: hidden
+    +clearfix
+
+    .work-overlay
+        background: fade-out($accent-color, 0.9)
+        height: 100%
+
+        big
+        font-size: 22px
+        color: white
+        text-align: center
+        line-height: 1.4
+        padding: 80px 20px 10px
+        margin: 0
+        text-shadow: 2px 2px 5px $accent-color
+
+.work-overlay:hover
+    background: fade-out($accent-color, 0.4)
+    +transition
+
+@media screen and (min-width: 2000px)
+    grid-template-columns: repeat(auto-fill, minmax(6, 1fr))
+    .work-container
+        min-height: 300px
+
+@media screen and (max-width: 900px)
+    grid-template-columns: repeat(2, 2fr)
+
+@media screen and (max-width: 600px)
+    grid-template-columns: repeat(1, 1fr)
+    min-height: 400px

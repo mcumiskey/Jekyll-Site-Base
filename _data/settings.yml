@@ -1,0 +1,31 @@
+#Site Settings
+title: Miles Cumiskey 
+email: milescumiskey@gmail.com
+description: Multidisiplinary Designer and Developer
+
+logo: logo.svg
+bg-image: 'hero-img.jpeg'
+
+#Menu Items List
+menu: 
+- {name: Home, url: '/'}
+- {name: 3D Models and Rigs, url: '/3D'}
+- {name: Code, url: '/Programming'}
+- {name: Writing, url: '/Writing'}
+- {name: About Me, url: '/About'}
+- {name: Contact, url: '/Contact'}
+
+#Site Content Settings
+#note: colors are in _vars.sass
+
+
+#Highligted Projects Items List
+highlights: 
+- {name: 1, folder: 'proj-1', title: Lowpoly Chicken 3D model}
+- {name: 2, folder: 'proj-2', title: Lowpoly Chicken 3D model}
+- {name: 3, folder: 'proj-3', title: Lowpoly Chicken 3D model}
+- {name: 4, folder: 'proj-4', title: Lowpoly Chicken 3D model}
+- {name: 5, folder: 'proj-5', title: Lowpoly Chicken 3D model}
+- {name: 6, folder: 'proj-6', title: Lowpoly Chicken 3D model}
+- {name: 7, folder: 'proj-7', title: Lowpoly Chicken 3D model}
+- {name: 8, folder: 'proj-8', title: Lowpoly Chicken 3D model}

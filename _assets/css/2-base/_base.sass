@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+
+$hyperlegible: 'Atkinson Hyperlegible', sans-serif
+
+*,
+*::before,
+*::after
+  box-sizing: border-box
+
+*
+  margin: 0
+
+html,
+body
+  height: 100%
+
+body
+  line-height: 1.5
+  -webkit-font-smoothing: antialiased
+  padding: 0 5%
+  background-color: $bg-color
+
+.content
+  padding: 1%
+
+img,
+picture,
+video,
+canvas,
+svg
+  border-radius: 8px
+  display: block
+  width: 100%
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+
+input,
+button,
+textarea,
+select
+  font: inherit
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  overflow-wrap: break-word
+
+#root,
+#__next
+  isolation: isolate
+
+h1, h2, h3, h4, h5, h6
+  font-family: $hyperlegible
+  font-weight: bold
+  margin-top: 1em
+  margin-bottom: 0.5em
+
+.huge, h1
+  font-size: 3.5rem
+
+.large, h2
+  font-size: 3rem
+
+.bigger, h3
+  font-size: 2.5rem
+
+  &--center
+    @extend h3
+    text-align: center
+
+.big, h4
+  font-size: 2rem
+
+h5
+  font-size: 2rem
+  color: $text-accent-color
+
+h6
+  font-size: 1.5rem
+
+.small, small
+  font-size: 0.875rem
+
+p, a, body
+  font-family: $hyperlegible
+
+p
+  margin: 0 0 20px 0
+  font-size: 1rem
+  color: $text-color
+
+li
+  padding: 5px
+
+ul
+  list-style-type: circle
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+hr
+  border: solid #ddd
+  border-width: 1px 0 0
+  clear: both
+  width: 100%
+  margin: 10px 0 30px
+  height: 0
+
+code
+  max-width: 100%
+  font-family: Consolas,"courier new"
+  color: $code-text
+  background-color: $code-bg-color
+  border-radius: 8px
+  padding: 13px 16px
+  display: block
+
+p > code,
+li > code,
+dd > code,
+td > code
+  display: inline
+  line-height: 1.5
+  padding: 0.5% 1%
+
+button
+  background-color: $accent-color
+  padding: 2px
+  border: solid transparent
+  border-radius: 8px
+  border-width: 0 0 4px
+  box-sizing: border-box
+  overflow: visible
+  padding: 13px 16px
+  text-align: center
+  vertical-align: middle
+  white-space: nowrap
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+
+  &:hover
+    background-color: $accent-color-light
+
+.post-list
+  list-style-type: none
+  margin: 0
+  padding: 0
+  h4
+    margin: 0
+    padding: 0
+
+iframe
+  border-radius: 8px
+  display: block
+  width: 100%
+  aspect-ratio: 16/9
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+
+// Links
+a
+  color: $link-color
+  outline: 0
+
+a:hover, a:focus
+  color: lighten($link-color, 20%)
+
+// Selection colors (easy to forget)
+::selection
+  background: $selection-color
+
+::-moz-selection
+  background: $selection-color
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent
+
+body
+  -webkit-tap-highlight-color: $selection-color
+
+//tables
+table
+  margin: 0 0 40px 0
+  border-style: none
+  border-radius: 8px
+  border-spacing: 1
+  border-collapse: collapse
+  overflow: hidden
+  width: 100%
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+
+table th
+  background: $accent-color
+  text-align: left
+  padding: 13px 16px
+
+table tr
+  display: table-row
+  background: $alt-bg-color
+  padding: 13px 16px
+
+  &:nth-of-type(odd)
+    background: $bg-color
+
+table td
+  padding: 13px 16px
+
+table thead
+  background-color: $accent-color
+
+table tbody tr:nth-child(2n)
+  background-color: $alt-bg-color
+
+form
+  margin: 0 auto 10px
+  padding: 10px 20px
+
+  fieldset
+    border-style: none
+
+  textarea[type="text"], input
+    border-radius: 8px
+    border: 3px solid $text-accent-color
+    width: 100%
+    +box-sizing(border-box)
+    padding: 10px
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    font-size: 16px
+
+    &:focus
+      outline: none
+      border-color: $text-color
+
+  .message-body
+    textarea
+      border-radius: 8px
+      border: 3px solid $text-accent-color
+      width: 100%
+      +box-sizing(border-box)
+      padding: 10px
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      font-size: 16px
+
+      &:focus
+        outline: none
+        border-color: $text-color
+
+  .submit-wrap
+    text-align: right
+
+  [type="submit"]
+    background-color: $accent-color
+    padding: 2px
+    border: solid transparent
+    border-radius: 8px
+    border-width: 0 0 4px
+    box-sizing: border-box
+    overflow: visible
+    padding: 13px 16px
+    text-align: center
+    vertical-align: middle
+    white-space: nowrap
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+
+    &:hover
+      background: $accent-color-light
+
+  [type="checkbox"]
+    border: 3px solid $text-accent-color
+    width: 12px
+    aspect-ratio: 1/1
+
+    &:hover
+      border: 3px solid $text-accent-color
+      background: $text-accent-color
+
+    &:focus
+      border: 3px solid $text-accent-color
+
+  input[type=checkbox]:checked
+    border: 3px solid $text-accent-color
+    background: $text-accent-color
+
+.contact-info-group
+  outline: none
+  label
+    width: 50%
+    float: left
+    +box-sizing(border-box)
+
+    &:nth-child(1)
+      padding-right: 10px
+
+    &:nth-child(2)
+      padding-left: 10px
+
+label
+  margin-bottom: 20px
+
+  span
+    display: block
+
+@media (max-width: 541px)
+  form
+    .contact-info-group
+
+      label
+        width: 100%
+
+      &:nth-child(1)
+        padding: 0
+
+      &:nth-child(2)
+        padding: 0
+
+    [type="submit"]
+      width: 100%
