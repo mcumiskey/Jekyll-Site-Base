@@ -14,6 +14,12 @@
 
 <body>
 
+  {% include header.html %}
+  {% include blurb.html %}
+
+  {% include highlightedWork.html %}
+
+
   {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
@@ -75,11 +81,6 @@
   {%- endif %}
 
   {%- endif -%}
-
-  {% include header.html %}
-  {% include blurb.html %}
-
-  {% include highlightedWork.html %}
 
   {% include footer.html %}
 
