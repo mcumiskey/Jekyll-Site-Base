@@ -9,9 +9,6 @@ bg-image: 'hero-img.jpeg'
 #Menu Items List
 menu: 
 - {name: Home, url: '/'}
-- {name: 3D Models and Rigs, url: '/3D'}
-- {name: Code, url: '/Programming'}
-- {name: Writing, url: '/Writing'}
 - {name: About Me, url: '/About'}
 - {name: Contact, url: '/Contact'}
 
